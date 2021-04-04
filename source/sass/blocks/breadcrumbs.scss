@@ -1,0 +1,54 @@
+.breadcrumbs {
+  padding-top: 33px;
+  padding-bottom: 50px;
+
+  @include viewport--md {
+    padding-top: 23px;
+    padding-bottom: 23px;
+  }
+}
+
+.breadcrumbs__list {
+  @include reset-list;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.breadcrumbs__link {
+  display: inline-flex;
+  margin-right: 10px;
+  margin-bottom: 5px;
+  padding: 10px;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 300;
+  color: $color-alice-blue;
+
+  @include viewport--sm {
+    padding: 10px;
+  }
+
+  &--active {
+    @include active-element ;
+  }
+
+  &:hover[href],
+  &:focus {
+    @include hover;
+  }
+
+  &:active {
+    @include active;
+  }
+}
+
+.breadcrumbs__item {
+  position: relative;
+
+  &:not(:last-child)::after {
+    position: absolute;
+    content: "/";
+    top: 25%;
+    left: 90%;
+  }
+}

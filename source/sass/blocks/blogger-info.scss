@@ -1,0 +1,172 @@
+.blogger-info {
+  display: flex;
+  background-color: rgba(#ffffff, 0.25);
+  border: 1px solid #eff3f5;
+  backdrop-filter: blur(5px);
+  border-radius: 5px;
+
+  @include viewport--md {
+    flex-direction: column;
+  }
+}
+
+.blogger-info__img {
+  display: block;
+  height: 100%;
+  margin-right: 40px;
+  object-fit: cover;
+
+  @include viewport--md {
+    width: 100%;
+    margin-right: 0;
+  }
+}
+
+.blogger-info__about {
+  width: 764px;
+  padding: 30px 43px 8px 0;
+
+  @include viewport--lg {
+    padding: 25px;
+  }
+
+  @include viewport--md {
+    width: 100%;
+    padding: 15px;
+  }
+}
+
+.blogger-info__title {
+  margin: 0;
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #eff3f5;
+}
+
+.blogger-info__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 0;
+  list-style: none;
+  border-bottom: 1px solid #eff3f5;
+
+  @include viewport--md {
+    justify-content: center;
+  }
+}
+
+.blogger-info__item {
+  padding-right: 50px;
+  padding-bottom: 30px;
+
+  @include viewport--md {
+    padding-right: 20px;
+  }
+}
+
+.blogger-info__link {
+  display: flex;
+
+  @include viewport--md {
+    align-items: center;
+  }
+}
+
+.blogger-info__icon {
+  margin-right: 20px;
+
+  @include viewport--md {
+    width: 44px;
+    height: 44px;
+  }
+}
+
+.blogger-info__number-subscribers {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: 0.3s linear;
+
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+    transition: 0.3s linear;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+}
+
+.blogger-info__number {
+  margin: 0;
+  font-size: 30px;
+  line-height: 37px;
+  font-weight: 700;
+  color: #eff3f5;
+
+  @include viewport--md {
+    font-size: 20px;
+    line-height: 27px;
+  }
+}
+
+.blogger-info__subscribers {
+  margin: 0;
+  letter-spacing: 0.05em;
+  color: #eff3f5;
+}
+
+.blogger-info__channel-about {
+  overflow-y: scroll;
+}
+
+.blogger-info__channel {
+  margin: 0;
+  padding-bottom: 10px;
+  font-size: 30px;
+  line-height: 37px;
+  font-weight: 700;
+}
+
+.blogger-info__channel-text {
+  height: 130px;
+  margin: 0;
+  padding-right: 20px;
+}
+
+::-webkit-scrollbar-button {
+  background-image: url("");
+  background-repeat: no-repeat;
+  width: 5px;
+  height: 0;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #969696;
+  width: 2px;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  height: 113px;
+  background-color: #eff3f5;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(#6e105e, 0.7);
+}
+
+::-webkit-resizer {
+  background-image: url("");
+  background-repeat: no-repeat;
+  width: 4px;
+  height: 0;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+}

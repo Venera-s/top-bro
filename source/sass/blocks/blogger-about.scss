@@ -1,0 +1,7 @@
+.blogger-about {
+  padding-bottom: 80px;
+
+  @include viewport--md {
+    padding-bottom: 60px;
+  }
+}

@@ -1,0 +1,46 @@
+body {
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-style: normal;
+  font-weight: 500;
+  color: $color-alice-blue;
+  background-color: $color-palatinate-purple;
+  overflow-x: hidden;
+  cursor: url("../img/svg/cursor.svg"), default;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+a[href],
+button,
+svg,
+select,
+option {
+  transition: 0.3s linear;
+
+  &:hover {
+    cursor: url("../img/svg/cursor-hover.svg"), default;
+    transition: 0.3s linear;
+  }
+}

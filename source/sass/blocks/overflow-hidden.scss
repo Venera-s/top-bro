@@ -1,0 +1,5 @@
+.overflow-hidden {
+  @include viewport--md {
+    overflow: hidden;
+  }
+}

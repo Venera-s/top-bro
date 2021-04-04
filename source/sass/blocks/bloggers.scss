@@ -1,0 +1,107 @@
+.bloggers {
+  padding-bottom: 118px;
+
+  @include viewport--md {
+    padding-bottom: 70px;
+  }
+
+  @include viewport--sm {
+    padding-bottom: 50px;
+  }
+}
+
+.bloggers__title {
+  padding-bottom: 40px;
+
+  @include viewport--sm {
+    padding-bottom: 35px;
+  }
+}
+
+.bloggers__filters {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  padding-bottom: 50px;
+
+  @include viewport--md {
+    padding-bottom: 25px;
+  }
+}
+
+.bloggers__filter-name {
+  @include reset-indents;
+  padding: 0 40px 20px 10px;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 500;
+
+  @include viewport--md {
+    padding-right: 15px;
+    padding-bottom: 15px;
+  }
+}
+
+
+.bloggers__select {
+  position: relative;
+  margin-right: 30px;
+  padding: 15px 40px 20px 10px;
+  padding-right: 27px;
+  color: white;
+  background: url("../../img/svg/arrow-select.svg") right 45% no-repeat;
+  background-color: #6e105e;
+  border: none;
+  outline: none;
+  appearance: none;
+
+  &:hover,
+  &:focus {
+    opacity: 0.5;
+  }
+}
+
+.bloggers__select-option {
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  border-radius: 12px;
+  border-color: black;
+}
+
+.bloggers__filter-btn {
+  @include reset-indents;
+  position: relative;
+  padding-right: 59px;
+  color: $color-alice-blue;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  @include viewport--md {
+    padding-right: 36px;
+    padding-bottom: 15px;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 5px;
+    right: 37px;
+    width: 10px;
+    height: 10px;
+    border: 3px solid $color-alice-blue;
+    border-left-style: none;
+    border-top: none;
+    transform: rotate(45deg);
+
+    @include viewport--md {
+      right: 18px;
+    }
+
+    @include viewport--sm {
+      top: 1px;
+    }
+  }
+}

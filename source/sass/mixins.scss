@@ -1,0 +1,60 @@
+// Reset indents
+
+@mixin reset-indents {
+  margin: 0;
+  padding: 0;
+}
+
+// Reset list indents
+
+@mixin reset-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin font-20 {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 600;
+}
+
+// Desktop first
+
+// от 1024px до 1439px
+@mixin viewport--lg {
+  @media (max-width: $viewport--xl - 1) {
+    @content;
+  }
+}
+
+// от 768px до 1023px
+@mixin viewport--md {
+  @media (max-width: $viewport--lg - 1) {
+    @content;
+  }
+}
+
+// от 320px до 767px
+@mixin viewport--sm {
+  @media (max-width: $viewport--md - 1) {
+    @content;
+  }
+}
+
+// states
+
+@mixin hover {
+  background-color: $color-tenne;
+  border-radius: 5px;
+}
+
+@mixin active {
+  opacity: 0.7;
+}
+
+@mixin active-element {
+  color: $color-palatinate-purple;
+  background-color: rgba($color-alice-blue, 0.8);
+  border-radius: 5px;
+}

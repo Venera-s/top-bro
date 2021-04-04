@@ -1,0 +1,17 @@
+.bloggers-list {
+  @include reset-list;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(290px, 311px));
+  justify-content: center;
+  gap: 50px 20px;
+
+  @include viewport--lg {
+    row-gap: 20px;
+  }
+
+  &--slider {
+    display: flex;
+    justify-content: flex-start;
+    gap: 0;
+  }
+}

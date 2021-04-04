@@ -1,0 +1,86 @@
+.blogger-card {
+  position: relative;
+  max-width: 311px;
+
+  &:hover > .blogger-card__link {
+    opacity: 1;
+  }
+}
+
+.blogger-card__img {
+  display: block;
+}
+
+.blogger-card__link {
+  color: #eff3f5;
+  opacity: 0;
+}
+
+.blogger-card__info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 100%;
+  padding: 0 10px;
+  background-color: rgba($color-medium-violet-red, 0.5);
+}
+
+.blogger-card__info-name {
+  @include reset-indents;
+  padding-bottom: 10px;
+  font-size: 30px;
+  line-height: 37px;
+  font-weight: 700;
+
+  @include viewport--lg {
+    font-size: 22px;
+    line-height: 24px;
+  }
+
+  @include viewport--md {
+    font-size: 18px;
+  }
+
+  @include viewport--sm {
+    font-size: 30px;
+  }
+}
+
+.blogger-card__info-list {
+  @include reset-list;
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 10px;
+}
+
+.blogger-card__info-item {
+  display: flex;
+  align-items: center;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  font-size: 20px;
+
+  @include viewport--lg {
+    font-size: 16px;
+    padding-right: 5px;
+    padding-bottom: 0;
+  }
+
+  @include viewport--sm {
+    font-size: 16px;
+    padding-right: 10px;
+  }
+}
+
+.blogger-card__info-icon {
+  margin-right: 10px;
+
+  @include viewport--md {
+    width: 20px;
+    height: 20px;
+    margin-right: 7px;
+  }
+}
