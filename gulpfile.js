@@ -82,7 +82,7 @@ gulp.task('copy', function () {
     'source/*.html',
     'source/fonts/**/*.{woff,woff2}',
     'source/img/**',
-    // 'source/js/main.js'
+    'source/js/main.js'
   ], {
     base: 'source'
   })
@@ -131,7 +131,7 @@ gulp.task('server', function () {
 
   gulp.watch('source/sass/**/*.scss', gulp.series('css'));
   gulp.watch('source/img/sprite/icon-*.svg', gulp.series('sprite', 'refresh'));
-  // gulp.watch(['!source/js/main.js', 'source/js/*.js'], gulp.series('js', 'refresh'));
+  gulp.watch(['!source/js/main.js', 'source/js/*.js'], gulp.series('js', 'refresh'));
   gulp.watch('source/*.html', gulp.series('update', 'refresh'));
 });
 
