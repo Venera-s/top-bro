@@ -58,7 +58,7 @@
     "source/js/*.js"
   ],
   "engines": {
-    "node": "10"
+    "node": "14"
   },
   "dependencies": {
     "caniuse-lite": "^1.0.30001204"
